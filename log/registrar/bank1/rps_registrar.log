@@ -1,0 +1,2 @@
+{"level":"info","time":"2025-02-10T18:00:53+04:00","message":"/registrar/internal/pkg/logger.go:52 bank1 : logger loaded."}
+{"level":"info","time":"2025-02-10T18:00:53+04:00","message":"/registrar/internal/server/database/mssql/mssqldb.go:35 bank1 SQL Database connection created successfully."}

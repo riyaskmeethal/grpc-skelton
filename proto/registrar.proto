@@ -1,0 +1,29 @@
+syntax="proto3";
+
+package someapp;
+
+option go_package = "osh.com/rps/someapp/proto/generated/someapp;someappPb";
+
+
+import "google/api/field_behavior.proto";
+import "validate/validate.proto";
+
+service SomeService {
+  rpc somePurpose(somePurposeRequest) returns (somePurposeResponse) {}
+
+  
+}
+
+message somePurposeRequest {
+  string something = 1[(validate.rules).string.min_len = 5, (google.api.field_behavior) = REQUIRED];
+  string something1 = 2[(validate.rules).string.len = 8, (google.api.field_behavior) = REQUIRED];
+  
+}
+
+message somePurposeResponse {
+  string statusCode = 1;
+  string Message = 2;
+  string somedata = 3;
+  string somedata1 = 4;
+}
+

@@ -1,0 +1,2 @@
+{"level":"info","time":"2025-02-18T10:03:28+04:00","message":"D:/Users/riyas.k/study/grpc-microservice-skelton/registrar/internal/pkg/logger.go:52 bank1 : logger loaded."}
+{"level":"fatal","time":"2025-02-18T10:03:28+04:00","message":"D:/Users/riyas.k/study/grpc-microservice-skelton/registrar/internal/server/database/mssql/operations/connection.go:54 Error connecting to database: %!s(MISSING) mssql: login error: Login failed for user 'sa'."}

@@ -1,0 +1,64 @@
+rest.enable: true
+rest.host: 127.0.0.1:8080
+grpc.host: 127.0.0.1:50506
+tls: #TODO.
+  certFile: certificates/oma-cert.pem
+  enable: true
+  keyFile: certificates/oma-key.pem
+# Database configurations.
+# configure database credential for all institutes
+# for mongo system "validation db" need to be configured under sql.
+database.system: mssql
+mongodbs:
+  adib:
+    host: 127.0.0.1:27017
+    namePref: something
+    collection: something
+    maxConn: 10000
+  bank2:
+    host: 127.0.0.1:27017
+    namePref: something
+    collection: something
+    maxConn: 10000
+  # bank3:
+  #   host: 127.0.0.1:27017
+  #   namePref: _test_rps_registrar
+  #   collection: registrar
+  #   maxConn: 10000
+
+sqldbs:
+  adib:
+    user: sa
+    password: something
+    hostip: 127.0.0.1
+    port: 1433
+    dbname: something
+  bank1:
+    user: sa
+    password: Rak@123!!DB
+    hostip: 127.0.0.1
+    port: 1433
+    dbname: something
+  # bank2:
+  #   user: sa
+  #   password: Rak@123!!DB
+  #   hostip: 127.0.0.1
+  #   port: 1433
+  #   dbname: something
+    
+logger:
+  institutes: # list of institutes based on which logs will be seprated,
+    - adib    # non-listed institute logs will be stored in default dir.
+    - bank1
+    # - bank2
+  log.level: trace # set log level(disable trace debug info error warn panic fatal )
+  log.file: somename.log
+  log.path: log/logdir
+  root.directory: approot
+  default.log.dir: "some" # default value 
+  max.size: 100 # setting the size of a log file in MB, default is 100MB
+  max.backups: 10 # max number of backup files
+  max.age: 30 # max days to keep backup files
+  compress: true # need to compress backup files
+system:
+  time.format: 2006-01-02 15:04:05

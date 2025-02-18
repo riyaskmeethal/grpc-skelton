@@ -1,0 +1,13 @@
+{"level":"info","time":"2025-02-10T18:00:53+04:00","message":"/registrar/internal/server/database/db.go:24 Starting with Mssql system"}
+{"level":"info","time":"2025-02-10T18:00:53+04:00","message":"/registrar/internal/server/database/mssql/mssqldb.go:35 adib SQL Database connection created successfully."}
+{"level":"info","time":"2025-02-10T18:00:53+04:00","message":"/registrar/gateway/rest/rest.go:26 Setting up REST gateway for grpc server."}
+{"level":"debug","time":"2025-02-10T18:00:53+04:00","message":"/registrar/gateway/grpc/grpc.go:29 RPS Registrar service loaded."}
+{"level":"debug","time":"2025-02-10T18:00:53+04:00","message":"/registrar/gateway/grpc/grpc.go:34 Registered interceptors."}
+{"level":"debug","time":"2025-02-10T18:00:53+04:00","message":"/registrar/gateway/grpc/grpc.go:39 RPS Registrar service registerd."}
+{"level":"info","time":"2025-02-10T18:00:53+04:00","message":"/registrar/gateway/rest/rest.go:43 Rest server listening on  127.0.0.1:8080"}
+{"level":"info","time":"2025-02-10T18:00:53+04:00","message":"/registrar/gateway/grpc/grpc.go:47 GRPC server started and listening on :  127.0.0.1:50506"}
+{"level":"error","time":"2025-02-10T18:02:33+04:00","message":"/registrar/cmd/main.go:62 interrupt signal recived."}
+{"level":"info","time":"2025-02-10T18:02:33+04:00","message":"/registrar/cmd/main.go:73 GRPC server stopped."}
+{"level":"info","time":"2025-02-10T18:02:33+04:00","message":"/registrar/cmd/main.go:54 Rest gateway disabled"}
+{"level":"info","time":"2025-02-10T18:02:33+04:00","message":"/registrar/cmd/main.go:79 Database connection closed."}
+{"level":"info","time":"2025-02-10T18:02:33+04:00","message":"/registrar/cmd/main.go:86 validation Database connection closed."}
